@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ghost Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    >
+</head>
+<body>
+    
+    <nav class="nav-bar" aria-label="Main navigation">
+        <a href="index.html" class="nav-item">
+            <i class="fa-solid fa-house"></i>
+            <span class="tooltip">Home</span>
+        </a>
+
+        <a href="about.html" class="nav-item">
+            <i class="fa-solid fa-user"></i>
+            <span class="tooltip">About</span>
+        </a>
+
+        <a href="projects.html" class="nav-item">
+            <i class="fa-solid fa-briefcase"></i>
+            <span class="tooltip">Projects</span>
+        </a>
+
+        <a href="contact.html" class="nav-item active" aria-current="page">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="tooltip">Contact</span>
+        </a>
+    </nav>
+
+    <main class="page-section inner-page">
+        <section class="page-header">
+            <p class="section-tag glass-card">Contact</p>
+            <h1 class="section-title">
+                Let’s build something <span class="highlight">great</span> together
+            </h1>
+            <p class="section-intro">
+                I am open to learning opportunities, project discussions and
+                connections with developers and security enthusiasts
+            </p>
+        </section>
+
+        <section class="contact-layout">
+            <article class="contact-info-panel">
+                <div class="contact-links">
+                    <a href="mailto:yourname@example.com" class="contact-link glass-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>stilesmvura@gmail.com</span>
+                    </a>
+
+                    <a href="https://github.com/Stile-1473" class="contact-link glass-card" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub Profile</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/yourname/" class="contact-link glass-card" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                </div>
+
+            </article>
+
+            <form class="contact-form glass-card" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
