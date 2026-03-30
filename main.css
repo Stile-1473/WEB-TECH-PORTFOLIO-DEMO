@@ -12,6 +12,7 @@
     --shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
     --glow: 0 0 25px var(--accent-glow);
     --transition: all 0.3s ease;
+
 }
 
 /* resetting all the defaults of box model..of every element in broweser to zero */
@@ -28,8 +29,9 @@ html {
 
 /* addinmg a black background to the body of the website */
 body {
-    min-height: 100vh;
+    min-height: 100svh; 
     background: var(--bg-gradient);
+
     color: var(--text-primary);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
