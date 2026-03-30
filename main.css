@@ -25,13 +25,18 @@
 /* setting a smooth scroll */
 html {
     scroll-behavior: smooth;
+    min-height: 100%;
+    background-color: #050505;
 }
 
 /* addinmg a black background to the body of the website */
 body {
-    min-height: 100svh; 
-    background: var(--bg-gradient);
-
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: #050505;
+    background-image: var(--bg-gradient);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--text-primary);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
@@ -510,14 +515,19 @@ a {
 }
 
 .project-image {
-    width: 68px;
-    height: 68px;
-    display: grid;
-    place-items: center;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     margin-bottom: 18px;
     border-radius: 20px;
     background: var(--accent-soft);
     border: 1px solid var(--glass-border);
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .project-image i {
